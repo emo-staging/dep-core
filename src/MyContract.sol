@@ -7,7 +7,7 @@ import {MyInterface} from "./interface/MyInterface.sol";
 contract MyContract is MyInterface {
     function run(
         MyStruct calldata _myStruct
-    ) external override returns (MyStruct memory) {
+    ) external virtual override returns (MyStruct memory) {
         // do something
     }
 }
